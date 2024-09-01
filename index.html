@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#about-me" class="selected">Sobre Mim</a></li>
+                <li class="nav-item"><a href="#courses">Formação</a></li>
+                <li class="nav-item"><a href="#portfolio">Portfólio</a></li>
+                <li class="nav-item"><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INICIO SOBRE MIM SECTION -->
+        <section id="about-me">
+            <div class="about-text-wrapper">
+                <h1>Lucas Pedroso</h1>
+                <h3>Junior Web Developer</h3> 
+                <p>Iniciei minha jornada no desenvolvimento front-end há dois anos. Hoje, como Desenvolvedor Web Júnior, aplico minhas habilidades em projetos reais enquanto curso Análise e Desenvolvimento de Sistemas. Tenho sólida experiência em HTML, CSS, JavaScript e design responsivo, além de estar sempre atualizado com as últimas técnicas em React para atender às demandas do setor."</p>
+            </div>
+            <div class="about-img-wrapper">
+                <img src="./images/me-picture.png" alt="">       
+            </div>
+        </section>
+        <!-- FIM SOBRE MIM SECTION -->
+
+         <!-- INICIO FORMACAO SECTION -->
+        <section id="courses">
+            <h2>Formação</h2>
+
+            <div class="content">
+                <article class="course">
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+                    <h5><strong>Instituição</strong> -  Uninter</h5>
+                    <p>Este curso de graduação da Uninter tem como objetivo formar profissionais qualificados para atuar no desenvolvimento, manutenção e gestão de sistemas de software. O currículo inclui disciplinas como programação, engenharia de software, banco de dados, redes de computadores e segurança da informação. Os alunos também aprendem a utilizar metodologias ágeis e a aplicar práticas de análise e modelagem de sistemas.</p>
+                </article>
+                <article class="course">
+                    <h3>Web Development Fundamentals</h3>
+                    <h5><strong>Instituição</strong> -  HyperionDev</h5>
+                    <p>Um curso introdutório de desenvolvimento web oferecido pela HyperionDev, que abrange os conceitos básicos e tecnologias fundamentais do desenvolvimento web. Além de HTML, CSS e JavaScript, o curso também aborda React (para desenvolvimento front-end) e MongoDB (para banco de dados NoSQL), proporcionando uma introdução ao desenvolvimento full stack.</p>
+                </article>
+                <article class="course">
+                    <h3>Web Development - Full Stack</h3>
+                    <h5><strong>Instituição</strong> -  Rocketseat</h5>
+                    <p>Este curso da Rocketseat é focado em formar desenvolvedores web full stack, capacitando-os a trabalhar tanto com front-end quanto com back-end. O conteúdo inclui tecnologias como HTML, CSS, JavaScript, React (para front-end), Node.js (para back-end), e bancos de dados como MongoDB e SQL, com um forte enfoque prático e em projetos reais.</p>
+                </article>
+            </div>
+        </section>
+        <!-- FIM FORMACAO SECTION -->
+
+         <!-- INICIO PORTFOLIO SECTION -->
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <div class="projects">
+                <article class="project">
+                    <div>
+                        <h3>Instituto Da Mente</h3>
+                        <p>O projeto <span>"Instituto da Mente"</span> é uma plataforma web que desenvolvi para um instituto voltado à saúde mental. A aplicação inclui seções para serviços clínicos, como psicanálise e hipnoterapia, além de cursos para profissionais da área. O objetivo era fornecer uma experiência de usuário fluida, facilitando o acesso às informações e serviços oferecidos pelo instituto.</p>
+                    </div>
+                    <button><a href="https://lucascpedroso.github.io/instituto_da_mente/" target="_blank">Ver Projeto</a></button>
+                </article>
+                <article class="project">
+                    <div>
+                        <h3>Rocketnotes</h3>
+                        <p>O projeto <span>"Rocketnotes"</span> é uma aplicação web desenvolvida para gerenciamento de notas pessoais. A interface é simples e direta, permitindo que os usuários criem, visualizem e organizem suas notas de forma eficiente. O design é responsivo e minimalista, focando na usabilidade.</p>
+                    </div>
+                    <button><a href="https://notesrocketseat.netlify.app/" target="_blank">Ver Projeto</a></button>
+                </article>
+                <article class="project">
+                    <div>
+                        <h3>Web Development - Full Stack</h3>
+                        <p>O projeto <span>"World Cup Calendar"</span> é uma aplicação web que desenvolvi para exibir os jogos da Copa do Mundo de 2022. Utilizei o Figma apenas para criar o wireframe, e todo o código foi implementado por mim. O objetivo do projeto é oferecer uma interface intuitiva e responsiva para que os usuários possam acompanhar o calendário dos jogos de forma prática e visualmente atraente.</p>
+                    </div>
+                    <button><a href="https://github.com/lucascpedroso/nlw-WorldCup" target="_blank">Ver Projeto</a></button>
+                </article>
+            </div>
+        </section>
+        <!-- FIM PORTFOLIO SECTION -->
+
+        <!-- INICIO CONTATO SECTION -->
+        <section id="contact">
+            <h2>Entre Em Contato</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <!-- FIM CONTATO SECTION -->
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
